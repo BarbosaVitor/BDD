@@ -5,7 +5,7 @@ Funcionalidade: Realizar o repasse de um valor parametrizado para um credenciado
 	PARA atender a determinação judicial de pensão alimentícia
 #VERSAO 3.52
 @FLUXO_PRINCIPAL
-Cenário: Credenciado com um único pagameto no mês
+	Cenário: Credenciado com um único pagameto no mês
 	Dado um credenciado que deve pagar um valor mensal de pensão alimentícia
 | Id | RepasseDaPensaoAlimenticia |
 | 01 | 1.800,00                   |

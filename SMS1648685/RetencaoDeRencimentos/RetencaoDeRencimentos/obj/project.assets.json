@@ -6223,11 +6223,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Compart\\sms\\BDDBarbosaVitor\\BDD\\SMS1648685\\RetencaoDeRencimentos\\RetencaoDeRencimentos\\RetencaoDeRencimentos.csproj",
+      "projectUniqueName": "\\\\mga-vitor\\compart\\sms\\BDD\\SMS1648685\\RetencaoDeRencimentos\\RetencaoDeRencimentos\\RetencaoDeRencimentos.csproj",
       "projectName": "RetencaoDeRencimentos",
-      "projectPath": "D:\\Compart\\sms\\BDDBarbosaVitor\\BDD\\SMS1648685\\RetencaoDeRencimentos\\RetencaoDeRencimentos\\RetencaoDeRencimentos.csproj",
+      "projectPath": "\\\\mga-vitor\\compart\\sms\\BDD\\SMS1648685\\RetencaoDeRencimentos\\RetencaoDeRencimentos\\RetencaoDeRencimentos.csproj",
       "packagesPath": "C:\\Users\\vitor.barbosa\\.nuget\\packages\\",
-      "outputPath": "D:\\Compart\\sms\\BDDBarbosaVitor\\BDD\\SMS1648685\\RetencaoDeRencimentos\\RetencaoDeRencimentos\\obj\\",
+      "outputPath": "\\\\mga-vitor\\compart\\sms\\BDD\\SMS1648685\\RetencaoDeRencimentos\\RetencaoDeRencimentos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -76,7 +76,7 @@ namespace RetencaoDeRencimentos.Cenario01
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Credenciado com um único pagameto no mês", new string[] {
                         "FLUXO_PRINCIPAL"});
 #line 8
-this.ScenarioSetup(scenarioInfo);
+ this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "Id",

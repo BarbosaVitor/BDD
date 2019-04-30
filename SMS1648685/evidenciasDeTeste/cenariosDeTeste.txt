@@ -1,0 +1,103 @@
+Funcionalidade: Realizar o repasse de um valor parametrizado para um credenciado com um único pagamento no mês
+	EU, como responsável pelo pagamento da rede credenciada
+	QUERO poder realizar a retenção de rendimentos de prestadores
+	PARA atender a determinação judicial de pensão alimentícia
+#VERSAO 3.52
+@FLUXO_PRINCIPAL
+	Cenário: Credenciado com um único pagameto no mês
+	Dado um credenciado que deve pagar um valor mensal de pensão alimentícia
+| Id | RepasseDaPensaoAlimenticia |
+| 01 | 1.800,00                   |
+	Quando  for realizado o faturamento do pagamento de um PEG
+| Id | ValorApresentado | ValorGlosado | ValorAPagar | DescontoDeINSS | DescontoDeIRRF | ValorLiquido |
+| 01 | 7.000,00         | 200,00       | 6.800,00    | 621,04         | 829,86         | 5.349,10     |
+	Então deverá ser gerado o repasse referente a pensão alimentícia, gerando para o credenciado o valor líquido de R$ 3.549,10.
+| Id | RepasseDaPensaoAlimenticia | ValorLiquido |
+| 01 | 1.800,00                   | 3.549,10     |
+
+Funcionalidade: Realizar o repasse de um valor parametrizado para um credenciado com dois pagamentos no mês, sendo que o primeiro pagamento já reteve o valor necessário
+    EU, como responsável pelo pagamento da rede credenciada
+    QUERO poder realizar a retenção de rendimentos de prestadores
+    PARA atender a determinação judicial de pensão alimentícia
+#VERSAO 3.52
+@FLUXO_PRINCIPAL
+    Cenário: Credenciado com dois pagamentos na competência onde o primeiro atinge o valor total do benefício
+    Dado que existe um credenciado que deve pagar um valor de pensão alimentícia
+| Id | RepasseDaPensaoAlimenticia |
+| 01 | 1.800,00                   |
+    Quando for realizado o faturamento do primeiro PEG
+| Id | ValorApresentado | ValorGlosado | ValorAPagar | DescontoDeINSS | DescontoDeIRRF | ValorLiquido |
+| 01 | 7.000,00         | 200,00       | 6.800,00    |    621,04    |    829,86    |  5.349,10  |
+    Então deverá repassar para o credenciado descontando o valor da pensão alimentícia
+| Id | RepasseDaPensaoAlimenticia | ValorLiquido |
+| 01 | 1.800,00                   | 3.549,10     |
+    E ao realizar o faturamento do segundo PEG 
+| Id | ValorApresentado | ValorGlosado | ValorAPagar | DescontoDeINSS | DescontoDeIRRF | ValorLiquido |
+| 01 | 3.500,00         | 500,00       | 3.000,00    | 245,82         | 328,48         | 2.425,70     |
+    E não deverá ser gerado nenhum desconto referente a pensão alimentícia pois o valor mensal já foi descontado no primeiro faturamento
+| Id | RepasseDaPensaoAlimenticia | ValorLiquido |
+| 01 | 0,00                       | 2.425,70     |
+
+Funcionalidade: Realizar o repasse de um valor parametrizado para um credenciado por meio de dois pagamentos
+    EU, como responsável pelo pagamento da rede credenciada
+    QUERO poder realizar a retenção de rendimentos de prestadores
+    PARA atender a determinação judicial de pensão alimentícia
+#VERSAO 3.52
+@FLUXO_PRINCIPAL
+    Cenário: Prestador Credenciado com dois pagamentos na competência onde o primeiro não atinge o valor total do benefício
+    Dado um prestador credenciado que deve pagar pensão alimentícia
+| Id | RepassePensaoAlimenticia |
+| 01 | 2.500,00                 |
+    Quando um PEG for faturado
+| Id | ValorApresentado | ValorGlosado | ValorAPagar | DescontoDeINSS | DescontoDeIRRF | ValorLiquido |
+| 01 | 3.250,00         | 750,00       | 2.500,00    | 204,85         | 273,73         | 2.021,42     |
+    Então restará ainda um valor para quitação
+| Id | RepasseDaPensaoAlimenticia | ValorLiquido |
+| 01 | 2.500,00                   | 0,00         |
+    E quando for realizado o faturamento de um segundo PEG
+| Id | ValorApresentado | ValorGlosado | ValorAPagar | DescontoDeINSS | DescontoDeIRRF | ValorLiquido |
+| 01 | 1.250,00         | 0,00         | 1.250,00    | 102,42         | 136,86         | 1.010,72     |
+    E deverá gerar um desconto referente a pensão alimentícia ainda não quitado no mês
+    E um valor líquido de pagamento 
+| Id | RepasseDaPensaoAlimenticia | ValorLiquido |
+| 01 | 478,58                     | 532,14       |
+
+Funcionalidade: Reter o valor de salário mínimo na pensão judicial
+    EU, como responsável pelo pagamento da rede credenciada
+    QUERO poder realizar a retenção de rendimentos de prestadores
+    PARA atender a determinação judicial de pensão alimentícia
+#VERSAO 3.52
+@FLUXO_PRINCIPAL
+	Cenário: Prestador credenciado com valor de pensão alimentícial indexada ao salário mínimo
+	Dado um prestador credenciado que deve pagar dois salários mínimos de pensão alimentícia
+	E for parametrizado na sua decisão judiial
+| Id | Competencia | ValorDoSalarioMinimo |
+| 01 | 01/2018     | 954,00               |
+	Quando for realizado o faturamento de um PEG
+| Id | Competencia | ValorApresentado | ValorGlosado | ValorAPagar | DescontoDeINSS | DescontoDeIRRF | ValorLiquido |
+| 01 | 05/2018     | 7.850,00         | 125,00       | 7.725,00    | 632,99         | 845,83         | 6.246,18     |
+	Então deverá ser gerado um repasse referente a pensão alimentícia para o credenciado
+| Id | RepasseDaPensaoAlimenticia | ValorLiquido |
+| 01 | 954,00                     | 5.292,18     |
+
+Funcionalidade: Reter o valor de salário mínimo na pensão judicial em duas competências diferentes
+    EU, como responsável pelo pagamento da rede credenciada
+    QUERO poder realizar a retenção de rendimentos de prestadores
+    PARA atender a determinação judicial de pensão alimentícia
+#VERSAO 3.52
+@FLUXO_PRINCIPAL
+	Cenário: Prestador credenciado com valor de pensão alimentícial indexada ao salário mínimo
+	Dado um prestador credenciado que deve pagar dois salários mínimos de pensão alimentícia
+	E for parametrizado na sua decisão judiial
+| Id | Competencia | ValorDoSalarioMinimo |
+| 01 | 01/2017     | 937,00               |
+| 02 | 01/2018     | 954,00               |
+| 03 | 01/2019     | 998,00               |
+	Quando for realizado o faturamento de um PEG
+| Id | Competencia | ValorApresentado | ValorGlosado | ValorAPagar | DescontoDeINSS | DescontoDeIRRF | ValorLiquido |
+| 01 | 10/2018     | 3.250,00         | 750,00       | 2.500,00    | 204,85         | 273,73         | 2.021,42     |
+| 02 | 02/2019     | 7.850,00         | 125,00       | 7.725,00    | 632,99         | 845,83         | 6.246,18     |
+	Então deverá ser gerado um repasse referente a pensão alimentícia para o credenciado
+| Id | RepasseDaPensaoAlimenticia | ValorLiquido |
+| 01 | 954,00                     | 1.067,42     |
+| 02 | 998,00                     | 5.248,18     |
