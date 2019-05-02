@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Cenario01\emprestimoComUnicoPagamentoNoMes.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>emprestimoComUnicoPagamentoNoMes.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Cenario02\emprestimoComDoisPagamentosPrimeiraParte.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>emprestimoComDoisPagamentosPrimeiraParte.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Cenario03\emprestimoComDoisPagamentosSegundaParte.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>emprestimoComDoisPagamentosSegundaParte.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Cenario01\emprestimoComUnicoPagamentoNoMes.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>emprestimoComUnicoPagamentoNoMes.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Cenario02\emprestimoComDoisPagamentosPrimeiraParte.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>emprestimoComDoisPagamentosPrimeiraParte.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Cenario03\emprestimoComDoisPagamentosSegundaParte.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>emprestimoComDoisPagamentosSegundaParte.feature.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

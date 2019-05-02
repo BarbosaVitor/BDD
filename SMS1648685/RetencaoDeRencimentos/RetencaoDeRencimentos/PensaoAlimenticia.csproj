@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.11.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="SpecFlow" Version="3.0.199" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Cenario01\pensaoComUnicoPagamentoNoMes.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>pensaoComUnicoPagamentoNoMes.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Cenario02\pensaoComDoisPagamentosPrimeiraParte.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>pensaoComDoisPagamentosPrimeiraParte.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Cenario03\pensaoComDoisPagamentosSegundaParte.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>pensaoComDoisPagamentosSegundaParte.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Cenario04\pensaoComValorIndexadoPrimeiraParte.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>pensaoComValorIndexadoPrimeiraParte.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Cenario05\pensaoComValorIndexadoSegundaParte.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>pensaoComValorIndexadoSegundaParte.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Cenario01\pensaoComUnicoPagamentoNoMes.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>pensaoComUnicoPagamentoNoMes.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Cenario02\pensaoComDoisPagamentosPrimeiraParte.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>pensaoComDoisPagamentosPrimeiraParte.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Cenario03\pensaoComDoisPagamentosSegundaParte.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>pensaoComDoisPagamentosSegundaParte.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Cenario04\pensaoComValorIndexadoPrimeiraParte.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>pensaoComValorIndexadoPrimeiraParte.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Cenario05\pensaoComValorIndexadoSegundaParte.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>pensaoComValorIndexadoSegundaParte.feature.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
