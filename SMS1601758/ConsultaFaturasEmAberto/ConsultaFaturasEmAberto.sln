@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultaFaturasEmAberto", "ConsultaFaturasEmAberto\ConsultaFaturasEmAberto.csproj", "{319E7A06-D7C2-4BFB-A611-E0AE267386A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{319E7A06-D7C2-4BFB-A611-E0AE267386A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319E7A06-D7C2-4BFB-A611-E0AE267386A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319E7A06-D7C2-4BFB-A611-E0AE267386A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319E7A06-D7C2-4BFB-A611-E0AE267386A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AF6E9CB-CF60-4848-A508-27CB3697FF9F}
+	EndGlobalSection
+EndGlobal
