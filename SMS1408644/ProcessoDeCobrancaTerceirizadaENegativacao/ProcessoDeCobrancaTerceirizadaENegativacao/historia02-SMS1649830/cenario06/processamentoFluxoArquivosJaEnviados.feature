@@ -9,9 +9,9 @@ Funcionalidade:
 @ROTINA_ARQUIVO_COBRANCA_TERCEIRIZADA
 @REMESSA
 @FLUXO_ALTERNATIVO
-Cenário: Processar a Rotina Arquivo Cobrança Terceirizada para envio dos documentos à empresa terceirizada com informação de faturas de mensalidade ou contribuição social
+Cenário: Processar a Rotina Arquivo Cobrança Terceirizada para envio dos documentos à empresa terceirizada com beneficiários que tem arquivos já enviados à terceirizada
 	Dado uma rotina arquivo cobrança terceirizada
 	E os beneficiários tenham faturas de mensalidade ou contribuição elegíveis para enviar à terceirizada
-	E o tipo de fatura seja considerado na inadimplência
+	E as faturas já tenham sido processadas em alguma rotina anterior
 	Quando a rotina for processada
-	Então deverá gerar documentos relacionados a essas faturas
+	Então não deverá gerar documentos relacionados a essas faturas

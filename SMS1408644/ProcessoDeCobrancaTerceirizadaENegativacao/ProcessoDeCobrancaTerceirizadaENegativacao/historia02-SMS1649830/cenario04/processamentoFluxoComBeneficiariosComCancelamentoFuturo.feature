@@ -15,4 +15,4 @@ Cenário: Processar a Rotina Arquivo Cobrança Terceirizada para envio dos docum
 	E os beneficiários em questão tenham data de cancelamento futura
 	E as faturas elegíveis tenham data de vencimento inferior a data de cancelamento dos beneficiários
 	Quando a rotina for processada
-	Então não deverá gerar documentos relacionados a esses beneficiários
+	Então não deverá gerar documentos relacionados a essas faturas

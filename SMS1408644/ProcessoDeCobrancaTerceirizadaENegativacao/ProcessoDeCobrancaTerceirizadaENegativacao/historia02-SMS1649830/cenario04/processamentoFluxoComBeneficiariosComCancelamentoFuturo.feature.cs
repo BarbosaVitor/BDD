@@ -100,7 +100,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 17
  testRunner.When("a rotina for processada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line 18
- testRunner.Then("não deverá gerar documentos relacionados a esses beneficiários", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+ testRunner.Then("não deverá gerar documentos relacionados a essas faturas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -96,8 +96,8 @@ this.ScenarioSetup(scenarioInfo);
 #line 17
     testRunner.And("a rotina for processada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line 18
-    testRunner.Then("deverá gerar um arquivo do tipo remessa contendo as informações de documentos dos" +
-                    " beneficiários cancelados", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+    testRunner.Then("deverá gerar um arquivo do tipo remessa contendo as informações dos documentos da" +
+                    "s faturas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -11,7 +11,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace ProcessoDeCobrancaTerceirizadaENegativacao.Historia02_SMS1649830.Cenario03
+namespace ProcessoDeCobrancaTerceirizadaENegativacao.Historia02_SMS1649830.Cenario06
 {
     using TechTalk.SpecFlow;
     
@@ -25,7 +25,7 @@ namespace ProcessoDeCobrancaTerceirizadaENegativacao.Historia02_SMS1649830.Cenar
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "processamentoFluxoSemBeneficiariosCancelados.feature"
+#line 1 "processamentoFluxoArquivosJaEnviados.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
@@ -68,18 +68,16 @@ namespace ProcessoDeCobrancaTerceirizadaENegativacao.Historia02_SMS1649830.Cenar
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Processar a Rotina Arquivo Cobrança Terceirizada para envio dos documentos à empr" +
-            "esa terceirizada com informação de beneficiários que não estejam cancelados na d" +
-            "ata do processamento da rotina")]
+            "esa terceirizada com beneficiários que tem arquivos já enviados à terceirizada")]
         [NUnit.Framework.CategoryAttribute("VERSAO_3.52")]
         [NUnit.Framework.CategoryAttribute("CONTROLE_FINANCEIRO")]
         [NUnit.Framework.CategoryAttribute("ROTINA_ARQUIVO_COBRANCA_TERCEIRIZADA")]
         [NUnit.Framework.CategoryAttribute("REMESSA")]
         [NUnit.Framework.CategoryAttribute("FLUXO_ALTERNATIVO")]
-        public virtual void ProcessarARotinaArquivoCobrancaTerceirizadaParaEnvioDosDocumentosAEmpresaTerceirizadaComInformacaoDeBeneficiariosQueNaoEstejamCanceladosNaDataDoProcessamentoDaRotina()
+        public virtual void ProcessarARotinaArquivoCobrancaTerceirizadaParaEnvioDosDocumentosAEmpresaTerceirizadaComBeneficiariosQueTemArquivosJaEnviadosATerceirizada()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Processar a Rotina Arquivo Cobrança Terceirizada para envio dos documentos à empr" +
-                    "esa terceirizada com informação de beneficiários que não estejam cancelados na d" +
-                    "ata do processamento da rotina", new string[] {
+                    "esa terceirizada com beneficiários que tem arquivos já enviados à terceirizada", new string[] {
                         "VERSAO_3.52",
                         "CONTROLE_FINANCEIRO",
                         "ROTINA_ARQUIVO_COBRANCA_TERCEIRIZADA",
@@ -90,11 +88,13 @@ this.ScenarioSetup(scenarioInfo);
 #line 13
  testRunner.Given("uma rotina arquivo cobrança terceirizada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line 14
- testRunner.And("beneficiários que estejam ativos ou o responsável financeiro da família esteja at" +
-                    "ivo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("os beneficiários tenham faturas de mensalidade ou contribuição elegíveis para env" +
+                    "iar à terceirizada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line 15
- testRunner.When("a rotina for processada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+ testRunner.And("as faturas já tenham sido processadas em alguma rotina anterior", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line 16
+ testRunner.When("a rotina for processada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line 17
  testRunner.Then("não deverá gerar documentos relacionados a essas faturas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             this.ScenarioCleanup();

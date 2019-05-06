@@ -90,14 +90,14 @@ this.ScenarioSetup(scenarioInfo);
 #line 13
  testRunner.Given("uma rotina arquivo cobrança terceirizada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line 14
- testRunner.And("os beneficiários tenham faturas de mensalidade ou contribuição in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("os beneficiários tenham faturas de mensalidade ou contribuição elegíveis para env" +
+                    "iar à terceirizada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line 15
- testRunner.And("as faturas elegíveis tenham data de vencimento inferior a data de cancelamento do" +
-                    "s beneficiários", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("o tipo de fatura seja considerado na inadimplência", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line 16
  testRunner.When("a rotina for processada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line 17
- testRunner.Then("não deverá gerar documentos relacionados a esses beneficiários", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+ testRunner.Then("deverá gerar documentos relacionados a essas faturas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             this.ScenarioCleanup();
         }

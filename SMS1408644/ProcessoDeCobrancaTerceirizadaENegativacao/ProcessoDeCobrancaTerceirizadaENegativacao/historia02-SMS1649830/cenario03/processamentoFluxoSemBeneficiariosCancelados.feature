@@ -13,4 +13,4 @@ Cenário: Processar a Rotina Arquivo Cobrança Terceirizada para envio dos docum
 	Dado uma rotina arquivo cobrança terceirizada
 	E beneficiários que estejam ativos ou o responsável financeiro da família esteja ativo
 	Quando a rotina for processada
-	Então não deverá gerar documentos relacionados a esses beneficiários
+	Então não deverá gerar documentos relacionados a essas faturas

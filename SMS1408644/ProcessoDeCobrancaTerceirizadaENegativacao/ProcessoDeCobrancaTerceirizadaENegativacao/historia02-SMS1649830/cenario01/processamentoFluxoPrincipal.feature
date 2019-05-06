@@ -15,4 +15,4 @@ Cenário: Processar a Rotina Arquivo Cobrança Terceirizada para envio dos docum
     E o tipo da terceirizada seja do tipo remessa
     Quando forem preenchidos os campos do modelo documento relacionado a rotina
     E a rotina for processada
-    Então deverá gerar um arquivo do tipo remessa contendo as informações de documentos dos beneficiários cancelados
+    Então deverá gerar um arquivo do tipo remessa contendo as informações dos documentos das faturas
