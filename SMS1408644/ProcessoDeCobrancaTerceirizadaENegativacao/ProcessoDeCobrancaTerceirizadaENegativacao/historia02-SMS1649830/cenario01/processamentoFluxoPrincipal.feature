@@ -1,4 +1,4 @@
-#language: pt-br
+﻿#language: pt-br
 Funcionalidade: 
     EU, como responsável pela controladoria,
     QUERO exportar a base de cobrança de beneficiários cancelados para a empresa terceirizada,
@@ -7,10 +7,12 @@ Funcionalidade:
 @VERSAO_3.52
 @CONTROLE_FINANCEIRO
 @ROTINA_ARQUIVO_COBRANCA_TERCEIRIZADA
-Cenário: Processar a Rotina Arquivo Cobrança Terceirizada
+@REMESSA
+@FLUXO_PRINCIPAL
+Cenário: Processar a Rotina Arquivo Cobrança Terceirizada para envio dos documentos à empresa terceirizada
     Dado uma rotina arquivo cobrança terceirizada
     E seja do tipo terceirizada
     E o tipo da terceirizada seja do tipo remessa
     Quando forem preenchidos os campos do modelo documento relacionado a rotina
     E a rotina for processada
-    Então deverá gerar um arquivo do tipo remessa contendo as informações dos documentos a serem enviados
+    Então deverá gerar um arquivo do tipo remessa contendo as informações de documentos dos beneficiários cancelados
