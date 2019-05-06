@@ -9,6 +9,5 @@ Cenário: Permitir acesso ao usuário à rotina de cobrança
 	Dado um usuário com permissão de acesso a Rotina Arquivo Cobrança Tercerizada
 	Quando for acessado o módulo CONTROLE FINANCEIRO
 	E acessar a carga de Documentos
-	E acessar a carga de Rotina Arquivo
 	E acessar a carga de Rotina Arquivo Cobrança Tercerizada
 	Então será possível visualizar as informações a respeito da cobrança terceirizada

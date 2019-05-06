@@ -11,7 +11,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace ProcessoDeCobrancaTerceirizadaENegativacao.SMS1654734
+namespace ProcessoDeCobrancaTerceirizadaENegativacao.Historia01_SMS1654734.Cenario01
 {
     using TechTalk.SpecFlow;
     
@@ -19,20 +19,20 @@ namespace ProcessoDeCobrancaTerceirizadaENegativacao.SMS1654734
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("acessoRestritoARotinaDeCobranca")]
-    public partial class AcessoRestritoARotinaDeCobrancaFeature
+    [NUnit.Framework.DescriptionAttribute("Acesso à rotina de cobrança de acordo com o grupo de segurança do usuário")]
+    public partial class AcessoARotinaDeCobrancaDeAcordoComOGrupoDeSegurancaDoUsuarioFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "acessoRestritoARotinaDeCobranca.feature"
+#line 1 "acessoNegadoARotinaDeCobranca.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "acessoRestritoARotinaDeCobranca", "EU, como responsável pela controladoria,\r\nQUERO que o acesso a rotina de cobrança" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "Acesso à rotina de cobrança de acordo com o grupo de segurança do usuário", "EU, como responsável pela controladoria,\r\nQUERO que o acesso a rotina de cobrança" +
                     " terceirizada seja restrito à área,\r\nPARA que eu possa definir os usuários que t" +
                     "erão permissão de cancelar documentos enviados para a empresa de cobrança, de fo" +
                     "rma manual.", ProgrammingLanguage.CSharp, ((string[])(null)));
@@ -68,22 +68,23 @@ namespace ProcessoDeCobrancaTerceirizadaENegativacao.SMS1654734
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add two numbers")]
-        [NUnit.Framework.CategoryAttribute("VERSAO_3.51")]
-        public virtual void AddTwoNumbers()
+        [NUnit.Framework.DescriptionAttribute("Negar acesso ao usuário à rotina de cobrança")]
+        [NUnit.Framework.CategoryAttribute("VERSAO_3.52")]
+        public virtual void NegarAcessoAoUsuarioARotinaDeCobranca()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", new string[] {
-                        "VERSAO_3.51"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Negar acesso ao usuário à rotina de cobrança", new string[] {
+                        "VERSAO_3.52"});
 #line 8
 this.ScenarioSetup(scenarioInfo);
 #line 9
- testRunner.Given("I have entered 50 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+ testRunner.Given("um usuário que não tenha permissão de acesso a Rotina Arquivo Cobrança Tercerizad" +
+                    "a", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line 10
- testRunner.And("I have entered 70 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.When("for acessado o módulo CONTROLE FINANCEIRO", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line 11
- testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+ testRunner.And("acessar a carga de Documentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line 12
- testRunner.Then("the result should be 120 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+ testRunner.Then("não será possível visualizar as informações a respeito da cobrança terceirizada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             this.ScenarioCleanup();
         }
