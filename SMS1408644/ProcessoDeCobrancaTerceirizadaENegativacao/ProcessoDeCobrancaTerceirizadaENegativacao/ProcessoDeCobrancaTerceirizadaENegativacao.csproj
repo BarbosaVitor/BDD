@@ -13,6 +13,56 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="historia01-SMS1654734\cenario01\acessoNegadoARotinaDeCobranca.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>acessoNegadoARotinaDeCobranca.feature</DependentUpon>
+    </Compile>
+    <Compile Update="historia01-SMS1654734\cenario02\acessoPermitidoARotinaDeCobranca.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>acessoPermitidoARotinaDeCobranca.feature</DependentUpon>
+    </Compile>
+    <Compile Update="historia02-SMS1649830\cenario01\processamentoFluxoPrincipal.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>processamentoFluxoPrincipal.feature</DependentUpon>
+    </Compile>
+    <Compile Update="historia02-SMS1649830\cenario02\processamentoFluxoSemFaturas.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>processamentoFluxoSemFaturas.feature</DependentUpon>
+    </Compile>
+    <Compile Update="historia02-SMS1649830\cenario03\processamentoFluxoSemBeneficiariosCancelados.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>processamentoFluxoSemBeneficiariosCancelados.feature</DependentUpon>
+    </Compile>
+    <Compile Update="historia02-SMS1649830\cenario04\processamentoFluxoComBeneficiariosComCancelamentoFuturo.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>processamentoFluxoComBeneficiariosComCancelamentoFuturo.feature</DependentUpon>
+    </Compile>
+    <Compile Update="historia02-SMS1649830\cenario05\processamentoFluxoFaturasSemIndicacaoDeConsideracao.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>processamentoFluxoFaturasSemIndicacaoDeConsideracao.feature</DependentUpon>
+    </Compile>
+    <Compile Update="historia02-SMS1649830\cenario06\processamentoFluxoArquivosJaEnviados.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>processamentoFluxoArquivosJaEnviados.feature</DependentUpon>
+    </Compile>
+    <Compile Update="historia02-SMS1649830\cenario07\processamentoFluxoTiposDeFaturas.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>processamentoFluxoTiposDeFaturas.feature</DependentUpon>
+    </Compile>
+    <Compile Update="historia02-SMS1649830\cenario08\processamentoFluxoParametrizacaoDeCompetencias.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>processamentoFluxoParametrizacaoDeCompetencias.feature</DependentUpon>
+    </Compile>
     <Compile Update="SMS1654734\acessoRestritoARotinaDeCobranca.feature.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -21,6 +71,46 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="historia01-SMS1654734\cenario01\acessoNegadoARotinaDeCobranca.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>acessoNegadoARotinaDeCobranca.feature.cs</LastGenOutput>
+    </None>
+    <None Update="historia01-SMS1654734\cenario02\acessoPermitidoARotinaDeCobranca.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>acessoPermitidoARotinaDeCobranca.feature.cs</LastGenOutput>
+    </None>
+    <None Update="historia02-SMS1649830\cenario01\processamentoFluxoPrincipal.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>processamentoFluxoPrincipal.feature.cs</LastGenOutput>
+    </None>
+    <None Update="historia02-SMS1649830\cenario02\processamentoFluxoSemFaturas.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>processamentoFluxoSemFaturas.feature.cs</LastGenOutput>
+    </None>
+    <None Update="historia02-SMS1649830\cenario03\processamentoFluxoSemBeneficiariosCancelados.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>processamentoFluxoSemBeneficiariosCancelados.feature.cs</LastGenOutput>
+    </None>
+    <None Update="historia02-SMS1649830\cenario04\processamentoFluxoComBeneficiariosComCancelamentoFuturo.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>processamentoFluxoComBeneficiariosComCancelamentoFuturo.feature.cs</LastGenOutput>
+    </None>
+    <None Update="historia02-SMS1649830\cenario05\processamentoFluxoFaturasSemIndicacaoDeConsideracao.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>processamentoFluxoFaturasSemIndicacaoDeConsideracao.feature.cs</LastGenOutput>
+    </None>
+    <None Update="historia02-SMS1649830\cenario06\processamentoFluxoArquivosJaEnviados.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>processamentoFluxoArquivosJaEnviados.feature.cs</LastGenOutput>
+    </None>
+    <None Update="historia02-SMS1649830\cenario07\processamentoFluxoTiposDeFaturas.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>processamentoFluxoTiposDeFaturas.feature.cs</LastGenOutput>
+    </None>
+    <None Update="historia02-SMS1649830\cenario08\processamentoFluxoParametrizacaoDeCompetencias.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>processamentoFluxoParametrizacaoDeCompetencias.feature.cs</LastGenOutput>
+    </None>
     <None Update="SMS1654734\acessoRestritoARotinaDeCobranca.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>acessoRestritoARotinaDeCobranca.feature.cs</LastGenOutput>
