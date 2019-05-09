@@ -1,8 +1,5 @@
 ﻿#language: pt
-Funcionalidade: 
-    EU, como responsável pela controladoria,
-    QUERO exportar a base de cobrança de beneficiários cancelados para a empresa terceirizada,
-    PARA que esta possa realizar o processamento da cobrança e proceder com a negociação da dídiva junto ao responsável financeiro.
+Funcionalidade: Processamento da rotina arquivo cobrança terceirizada
 
 @VERSAO_3.52
 @CONTROLE_FINANCEIRO

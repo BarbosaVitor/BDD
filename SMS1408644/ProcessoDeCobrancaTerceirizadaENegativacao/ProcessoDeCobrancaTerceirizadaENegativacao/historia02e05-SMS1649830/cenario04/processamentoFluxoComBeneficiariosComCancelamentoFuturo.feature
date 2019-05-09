@@ -1,14 +1,13 @@
 ﻿#language: pt-br
-Funcionalidade: 
-    EU, como responsável pela controladoria,
-    QUERO exportar a base de cobrança de beneficiários cancelados para a empresa terceirizada,
-    PARA que esta possa realizar o processamento da cobrança e proceder com a negociação da dídiva junto ao responsável financeiro.
+Funcionalidade: Processamento da rotina arquivo cobrança terceirizada
 
 @VERSAO_3.52
 @CONTROLE_FINANCEIRO
 @ROTINA_ARQUIVO_COBRANCA_TERCEIRIZADA
 @REMESSA
 @FLUXO_ALTERNATIVO
+
+Esquema do Cenário: 
 Cenário: Processar a Rotina Arquivo Cobrança Terceirizada para envio dos documentos à empresa terceirizada com informação de beneficiários que não estejam cancelados na data do processamento da rotina
 	Dado uma rotina arquivo cobrança terceirizada
 	E beneficiários que estejam ativos ou o responsável financeiro da família esteja ativo
